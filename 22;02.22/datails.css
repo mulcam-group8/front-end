@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+
+ body { padding : 50px; }
+
+
+.product_view {
+	position : relative;
+	padding : 0 0 0 300px;
+	width : 900px;
+	box-sizing: border-box;
+}
+.product_view .img{
+	position : absolute;
+	left :0;
+	top : 0;
+	
+}
+
+.product_view.img > img {
+	width : 360px;
+	height: 370px;
+	
+}
+.product_view.img li:after { content:''; display:block; clear : both;}
+.product_view.img li{ float : left;}
+.product_view.img li.on img {border-color:  209, 204, 174;}
+	
+#colgroup{
+	width : px;
+}
+
+hr {
+	border: solid 1px gray;
+	
+}
+
+

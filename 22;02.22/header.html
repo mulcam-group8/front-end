@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+$(document).ready(function(){
+
+});
+</script>
+<style type=text/css>
+header{ 
+
+position: fixed; 
+left: 0; 
+right: 0; 
+top: 0; 
+z-index:999;
+background:#ffff;
+	}
+	
+body{
+
+padding-top:350px;
+
+}	
+
+.menutap{
+
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border : 0;
+    float: left;
+}
+
+	
+</style>
+</head>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+
+<header class="header">
+	<div class="menu_wrap">
+		<H2 style="font-size:30px"><a href="main.html"><img src="https://see.fontimg.com/api/renderfont4/w1OB8/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Q2hhckNoYQ/millenia-personal-use.png" alt="Cursive fonts"></a>
+</a></H2>
+		
+		<c:if test="${empty loginUser }">
+		<script>
+		/* if(loginUser=""){
+			document.querySelector(l;)
+		}else{
+			
+		}  */
+		</script>
+		<div class="JoinLogin"><a href="tos.html">회원가입</a>&nbsp;
+		<a href="login.html">로그인</a></div>
+		</c:if>
+		
+		<c:if test="${!empty loginUser }">
+		<tr>
+		
+			<td>${loginUser.name}님 반갑습니다.</td> 
+		<div align="right">
+			<td class="mypage"><a href="mypage.html" style="text-decoration:none;">마이페이지</a></td>&nbsp;
+			<td class="login"><a href="logout.do" style="text-decoration:none;">로그아웃</a></td>
+		</div>	
+		</tr>
+		</c:if>	
+		
+		<HR>
+		<ul class="dep1">
+
+			<li><a href="about.html">About</a>
+				</li>
+
+			<li><a href="product.html">상품</a>
+				<ul class="dep2">
+					<li class="menutap" style="font-size:14px"><a href="tea.html">차 |&nbsp;</a></li>
+					<li class="menutap" style="font-size:14px"><a href="cup.html">다기</a></li>
+				</ul></li>
+
+			<li><a href="basket.html">장바구니</a>
+				</li>
+			<li><a href="notice.html">공지사항</a>
+			</li>
+
+		</ul>
+
+	</div>
+	</header>
+
+</body>
+</html>
